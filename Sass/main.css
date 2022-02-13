@@ -96,6 +96,11 @@ select {
   border-radius: 110px;
   outline: none;
   border: transparent;
+  cursor: pointer;
+}
+
+.button:hover, body header .iOS:hover, body header .Mac:hover, body main #sec5 .iOS:hover, body main #sec5 .Mac:hover {
+  opacity: 0.5;
 }
 
 .button span, body header .iOS span, body header .Mac span, body main #sec5 .iOS span, body main #sec5 .Mac span {
@@ -876,13 +881,18 @@ body footer .content {
 }
 
 body footer .content .data p {
-  padding: 5px 75px 10px 15px;
+  padding: 5px 75px 0px 15px;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 19px;
   text-align: left;
   color: #4c545d;
   font-weight: normal;
   line-height: 2.1;
+}
+
+body footer .content .data p:hover {
+  cursor: pointer;
+  color: #26baa4;
 }
 
 body footer .social {
@@ -901,7 +911,19 @@ body footer .social {
           align-items: center;
 }
 
+body footer .social a {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}
+
+body footer .social a:hover {
+  cursor: pointer;
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+          filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
 body footer .social img {
-  padding: 10px;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

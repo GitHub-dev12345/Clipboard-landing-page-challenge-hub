@@ -12,6 +12,11 @@
     border-radius: 110px;
     outline: none;
     border: transparent;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.5;
+    }
 
     span{
         opacity: 0.8;

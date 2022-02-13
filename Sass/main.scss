@@ -227,21 +227,36 @@ body {
 
             .data{
                 p {
-                    padding: 5px 75px 10px 15px;
+                    padding: 5px 75px 0px 15px;
                     font-family: $font-family;
                     font-size: 19px;
                     text-align: left;
                     color: $text-cr-1;
                     font-weight: normal;
                     line-height: 2.1;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: $ios-cr;
+                    }
                 }
             } 
         }
         .social{
             @include flex-box(row, center, center);
 
+            a{
+                width: 100%;
+                height: auto;
+                padding: 12px;
+
+                &:hover {
+                    cursor: pointer;
+                    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+                }
+            }
             img{
-                padding: 10px;
+                width: 100%;
             }
         }
     }

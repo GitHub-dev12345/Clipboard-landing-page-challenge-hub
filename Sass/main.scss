@@ -233,6 +233,7 @@ body {
                     color: $text-cr-1;
                     font-weight: normal;
                     line-height: 2.1;
+                    font-weight: $fonweight;
 
                     &:hover{
                         cursor: pointer;

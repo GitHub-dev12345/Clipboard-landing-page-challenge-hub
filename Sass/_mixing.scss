@@ -29,6 +29,7 @@
     text-align: $align;
     color: $para-cr;
     line-height: 1.5;
+    font-weight: $fonweight;
 }
 
 // All Section h2 Para are Common Para Code
@@ -40,6 +41,7 @@
     color: $para-cr;
     font-weight: normal;
     line-height: 1.7;
+    font-weight: $fonweight;
 }
 
 // In Header tag h1 tag & Para tage Mixing Code
@@ -56,5 +58,6 @@
     color: $para-cr;
     font-weight: normal;
     opacity: 0.8;
+    font-weight: $fonweight;
 }
 

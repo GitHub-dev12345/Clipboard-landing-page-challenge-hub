@@ -107,7 +107,6 @@ select {
   opacity: 0.8;
 }
 
-/* @import "_responsive"; */
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +182,7 @@ body header .head p {
   color: #9fabb2;
   font-weight: normal;
   opacity: 0.8;
+  font-weight: bold;
 }
 
 body header .btn {
@@ -250,6 +250,7 @@ body main #sec1 p {
   color: #9fabb2;
   font-weight: normal;
   line-height: 1.7;
+  font-weight: bold;
 }
 
 body main #sec2 {
@@ -299,6 +300,7 @@ body main #sec2 .feature .option p {
   text-align: left;
   color: #9fabb2;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 body main #sec3 {
@@ -335,6 +337,7 @@ body main #sec3 p {
   color: #9fabb2;
   font-weight: normal;
   line-height: 1.7;
+  font-weight: bold;
 }
 
 body main #sec3 .devices-img {
@@ -393,6 +396,7 @@ body main #sec4 p {
   color: #9fabb2;
   font-weight: normal;
   line-height: 1.7;
+  font-weight: bold;
 }
 
 body main #sec4 .more-feature {
@@ -452,6 +456,7 @@ body main #sec4 .more-feature .list p {
   text-align: center;
   color: #9fabb2;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 body main #sec4 .companies {
@@ -511,6 +516,7 @@ body main #sec5 p {
   color: #9fabb2;
   font-weight: normal;
   line-height: 1.7;
+  font-weight: bold;
 }
 
 body main #sec5 div {
@@ -584,6 +590,7 @@ body footer .content .data p {
   color: #4c545d;
   font-weight: normal;
   line-height: 2.1;
+  font-weight: bold;
 }
 
 body footer .content .data p:hover {

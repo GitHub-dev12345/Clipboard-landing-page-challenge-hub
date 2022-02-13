@@ -558,7 +558,7 @@ body footer {
   padding: 30px;
   margin-top: -110px;
   background: whitesmoke;
-  position: fixed;
+  /* position: fixed; */
 }
 
 body footer .logo img {

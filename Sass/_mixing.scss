@@ -1,0 +1,60 @@
+// SCSS Flex-Box Mixing
+@mixin flex-box($fdir, $jsc, $aliI) {
+    display: flex;
+    flex-direction: $fdir;
+    justify-content: $jsc;
+    align-items: $aliI;
+}
+
+// h2 Sub-Heading Mixing
+@mixin h2() {
+    font-family: $font-family;
+    font-size: 2.2rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+// h3 Sub-Heading Mixing
+@mixin h3($align) {
+    font-family: $font-family;
+    font-size: 1.5rem;
+    text-align: $align;
+    opacity: 0.7;
+}
+
+// Section-2(.feature > p) & Section-4(.more-feature > p)
+@mixin commonPara($align) {
+    font-family: $font-family;
+    font-size: 16px;
+    text-align: $align;
+    color: $para-cr;
+    line-height: 1.5;
+}
+
+// All Section h2 Para are Common Para Code
+@mixin h2Para() {
+    margin-top: 10px;
+    font-family: $font-family;
+    font-size: 18px;
+    text-align: center;
+    color: $para-cr;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+// In Header tag h1 tag & Para tage Mixing Code
+@mixin h1Head {
+    font-family: $font-family;
+    font-size: 2.75rem;
+    opacity: 0.7;
+}
+
+@mixin headerPara {
+    margin-top: 10px;
+    font-family: $font-family;
+    font-size: 20px;
+    color: $para-cr;
+    font-weight: normal;
+    opacity: 0.8;
+}
+

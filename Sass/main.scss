@@ -1,0 +1,248 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+// Partials File SCSS 
+@import "_CSS-Reset";
+@import "_variables";
+@import "_mixing";
+@import "_extend";
+@import "_responsive";
+
+// In Body Design Header Section CSS Code. 
+body {
+    @include flex-box(column, center, center);
+    
+    header{
+        @include flex-box(column, center, center);
+        width: 100%;
+        padding: 20px;
+        background: url(../images/bg-header-desktop.png) no-repeat;
+        background-size: 100% 60%;
+        
+        section{
+            margin: 80px auto;
+            
+            .logo{
+                width: 100%;
+            }
+        }
+        
+        .head{
+            @include flex-box(column, center, center);
+            margin-top: -20px;
+            text-align: center;
+            
+            h1{
+                @include h1Head;
+            }
+            
+            p{
+                @include headerPara;
+            }
+        }
+        
+        .btn{
+            @include flex-box(row, center, center);
+            margin: 25px auto;
+            padding: 25px;
+            width: 100%;
+        }
+        
+        .iOS{
+            @extend .button;
+        }
+        
+        .Mac{
+            @extend .button;
+            background: $mac-cr;
+        }
+    }
+    
+    main {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        
+        section {
+            border: transparent;
+        }
+        
+        #sec1{
+            @include flex-box(column, center, center);
+            padding: 100px;
+
+            h2{
+                @include h2;
+            }
+
+            p{
+                @include h2Para();
+            }
+        }
+
+        #sec2{
+            @include flex-box(row, flex-start, center);
+
+            .computer-img{
+                /* border: 1px solid  black; */
+                position: relative;
+                padding: 15px;
+                left: -30px;
+            }
+
+            .feature{
+                padding: 5px 20px 5px 20px;
+                margin: -50px 0px 0px 45px;
+                transform: scale(0.99);
+
+                .option{
+                    padding: 20px;
+                    
+                    h3{
+                        @include h3(left);
+                    }
+
+                    p{
+                        @include commonPara(left);
+                    }
+                }
+            }
+        }
+        #sec3{
+            /* border: 5px solid  green; */
+            @include flex-box(column, center ,center);
+            padding: 100px 0px 100px 0px;
+            margin-bottom: 30px;
+            
+            h2{
+                @include h2;
+            }
+            p{
+                @include h2Para;
+            }
+            .devices-img{
+                @include flex-box(column, center ,center);
+                /* border: 1px solid  black; */
+                width: 100%;
+                position: relative;
+                padding: 100px 30px 0px 30px;
+                margin-bottom: -5px;
+            }
+        }
+        #sec4{
+            /* border: 5px solid  red; */
+            position: relative;
+            @include flex-box(column, center ,center);
+            padding: 50px 0px 50px 0px;
+            top: -130px;
+            
+            h2{
+                @include h2;
+            }
+
+            p{
+                @include h2Para();
+            }
+            .more-feature{
+                @include flex-box(row, center, center);
+                /* border: 1px solid black; */
+                width: 100%;
+
+                .list{
+                    @include flex-box(column, center, center);
+                    align-self: baseline;
+                    padding: 25px;
+
+                    img{
+                        padding: 35px;
+                        align-self: center;
+                    }
+
+                    h3{
+                        @include h3(center);
+                    }
+
+                    p{
+                        @include commonPara(center);
+                    }
+                }
+            }
+            .companies{
+                @include flex-box(row, center, center);
+                padding: 100px 30px 60px 30px;
+                width: 100%;
+
+                img{
+                    padding: 45px;
+                }
+            }
+        }
+        #sec5{
+            /* border: 5px solid  blue; */
+            position: relative;
+            @include flex-box(column, center, center);
+            top: -190px;
+            padding: 25px;
+
+            h2{
+                @include h2;
+            }
+
+            p{
+                @include h2Para();
+            }
+            div{
+                width: 100%;
+                @include flex-box(row, center, center);
+                margin: 25px auto;
+            }
+            .iOS{
+                @extend .button;
+            }
+            .Mac{
+                @extend .button;
+                background: $mac-cr;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        @include flex-box(row, space-around, center);
+        padding: 30px;
+        margin-top: -110px;
+        background: $footer-clr;
+
+        .logo{
+            // border: 1px solid black;
+
+            img{
+                width: 50%;
+                float: right;
+            }
+        }
+        .content{
+            @include flex-box(row, space-around, baseline);
+            position: relative;
+            left: -70px;
+
+            .data{
+                p {
+                    padding: 5px 75px 10px 15px;
+                    font-family: $font-family;
+                    font-size: 19px;
+                    text-align: left;
+                    color: $text-cr-1;
+                    font-weight: normal;
+                    line-height: 2.1;
+                }
+            } 
+        }
+        .social{
+            @include flex-box(row, center, center);
+
+            img{
+                padding: 10px;
+            }
+        }
+    }
+}

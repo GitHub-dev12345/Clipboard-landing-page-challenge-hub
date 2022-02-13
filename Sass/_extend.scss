@@ -1,0 +1,19 @@
+// Extend SCSS 
+.button{
+    padding: 15px 35px 15px 35px;
+    font-family: $font-family;
+    font-size: $fon-siz;
+    color: white;
+    margin: 7px;
+    margin-bottom: 12px;
+    background: $ios-cr;
+    font-weight: bold;
+    box-shadow: 3px 5px 10px #6d6b6b6b;
+    border-radius: 110px;
+    outline: none;
+    border: transparent;
+
+    span{
+        opacity: 0.8;
+    }
+}

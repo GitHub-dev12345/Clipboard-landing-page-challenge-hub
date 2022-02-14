@@ -45,15 +45,18 @@ body {
             margin: 25px auto;
             padding: 25px;
             width: 100%;
-        }
-        
-        .iOS{
-            @extend .button;
-        }
-        
-        .Mac{
-            @extend .button;
-            background: $mac-cr;
+
+            a{
+                @extend .a;
+                .iOS{
+                    @extend .button;
+                }
+                
+                .Mac{
+                    @extend .button;
+                    background: $mac-cr;
+                }
+            }
         }
     }
     
@@ -86,7 +89,7 @@ body {
                 /* border: 1px solid  black; */
                 position: relative;
                 padding: 15px;
-                left: -30px;
+                left: -40px;
             }
 
             .feature{
@@ -102,6 +105,7 @@ body {
                     }
 
                     p{
+                        margin: 10px auto;
                         @include commonPara(left);
                     }
                 }
@@ -190,17 +194,22 @@ body {
             p{
                 @include h2Para();
             }
-            div{
-                width: 100%;
+            .btn{
                 @include flex-box(row, center, center);
                 margin: 25px auto;
-            }
-            .iOS{
-                @extend .button;
-            }
-            .Mac{
-                @extend .button;
-                background: $mac-cr;
+                width: 100%;
+
+                a{
+                    @extend .a;
+                    .iOS{
+                        @extend .button;
+                    }
+                    
+                    .Mac{
+                        @extend .button;
+                        background: $mac-cr;
+                    }
+                }
             }
         }
     }
@@ -226,19 +235,21 @@ body {
             left: -70px;
 
             .data{
-                p {
-                    padding: 5px 75px 0px 15px;
-                    font-family: $font-family;
-                    font-size: 19px;
-                    text-align: left;
-                    color: $text-cr-1;
-                    font-weight: normal;
-                    line-height: 2.1;
-                    font-weight: $fonweight;
-
-                    &:hover{
-                        cursor: pointer;
-                        color: $ios-cr;
+                a{ 
+                    text-decoration: none;                   
+                    p {
+                        padding: 5px 75px 0px 15px;
+                        font-family: $font-family;
+                        font-size: 19px;
+                        text-align: left;
+                        color: $text-cr-1;
+                        font-weight: normal;
+                        line-height: 2.1;
+                        
+                        &:hover{
+                            cursor: pointer;
+                            color: $ios-cr;
+                        }
                     }
                 }
             } 
@@ -312,10 +323,13 @@ body {
 
                 .data{
                     width: 100%;
-                    p{
-                        text-align: center;
-                        padding: 10px 10px 5px 10px;
-                        margin: 0px;
+                    a{
+                        
+                        p{
+                            text-align: center;
+                            padding: 10px 10px 5px 10px;
+                            margin: 0px;
+                        }
                     }
                 }
             }
@@ -334,11 +348,31 @@ body {
         header{
             .btn{
                 @include flex-box(column, center,center);
+                a{
+                    width:100%;
+                    .iOS{
+                        width: 100%;
+                    }
+                    .Mac{
+                        width: 100%;
+                    }
+                }
             }
         }
-        #sec5{
-            .btn{
-                @include flex-box(column, center,center);
+        main{
+            #sec5{
+                .btn{
+                    @include flex-box(column, center,center);
+                    a{
+                        width:100%;
+                        .iOS{
+                            width: 100%;
+                        }
+                        .Mac{
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -359,22 +393,27 @@ body {
                     font-size: $fonsi375h1;
                     line-height: 1.3;
                 }
-                p{
+                h2{
                     font-size: $para375h1;
                     line-height: 1.6;
                     transform: scale(0.95);
                 }
             }
             .btn{
+                position: relative;
                 @include flex-box(column, center, center);
+                top: -2px;
                 margin: 45px auto;
-                padding: 5px;    
+                padding: 5px; 
 
-                .iOS{
-                    width: 100%;
-                }
-                .Mac{
-                    width: 100%;
+                a{
+                    width:100%;
+                    .iOS{
+                        width: 100%;
+                    }
+                    .Mac{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -458,12 +497,16 @@ body {
                     @include flex-box(column, center, center);
                     margin: 20px auto;
                     padding: 25px;    
-    
-                    .iOS{
-                        width: 100%;
-                    }
-                    .Mac{
-                        width: 100%;
+
+                    a{
+                        width:100%;
+                        
+                        .iOS{
+                            width: 100%;
+                        }
+                        .Mac{
+                            width: 100%;
+                        }
                     }
                 }
             }

@@ -25,11 +25,10 @@
 // Section-2(.feature > p) & Section-4(.more-feature > p)
 @mixin commonPara($align) {
     font-family: $font-family;
-    font-size: 16px;
+    font-size: 16.10px;
     text-align: $align;
     color: $para-cr;
     line-height: 1.5;
-    font-weight: $fonweight;
 }
 
 // All Section h2 Para are Common Para Code
@@ -41,7 +40,6 @@
     color: $para-cr;
     font-weight: normal;
     line-height: 1.7;
-    font-weight: $fonweight;
 }
 
 // In Header tag h1 tag & Para tage Mixing Code
@@ -58,6 +56,5 @@
     color: $para-cr;
     font-weight: normal;
     opacity: 0.8;
-    font-weight: $fonweight;
 }
 
